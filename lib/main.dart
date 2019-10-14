@@ -16,10 +16,12 @@ class MyApp extends StatelessWidget {
     );
     jpush.addEventHandler(
         onReceiveNotification: (msg) {
-          print(msg);
+           print(msg);
+           print('00--------------------------00');
+           return Future.value('');
         }
     );
-    jpush.setTags(['topic', 'alarm', 'A02', 'A02_2F']);
+    jpush.setTags(['e375959', 'topic', 'alarm', 'A02', 'A02_2F']);
 //    jpush.setAlias('bpl123');
 //    jpush.addEventHandler(
 //      // 接收通知回调方法。
